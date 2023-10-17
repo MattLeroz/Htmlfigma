@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dist/styles/main.css">
+    <style>
+        body {
+            position: relative;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 20px; /* Ajustez la marge selon vos besoins */
+        }
+
+        .femme-image {
+            width: 756px;
+            height: 755px;
+            position: absolute;
+            top: 100px; /* Ajustez la valeur pour décaler vers le bas */
+            right: 0;
+            z-index: 2;
+        }
+
+        .decore-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body>
-    <div style="width: 100%; height: 100%; background: #FFF1DA"></div> <!-- Tache de couleur -->
-    <header>
+    <div style="width: 100%; height: 100%; background: #FFF1DA"></div>
+    <header style="position: relative; z-index: 2;">
         <div class="logo">
-            <img src="dist/images/logo.png" alt="Logo">
+            <img src="dist/images/superlogo.png" alt="Logo">
         </div>
         <nav>
             <ul class="boutonHeader">
@@ -24,11 +52,18 @@
             </ul>
         </nav>
     </header>
-    <div style="color: #DF6951; font-size: 20px; font-family: Poppins; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Best Destinations around the world</div>
-    <div style="color: #181E4B; font-size: 84px; font-family: Volkhov; font-weight: 700; line-height: 89px; word-wrap: break-word">Travel, enjoy<br/>and live a new<br/>and full life</div>
-    <div style="width: 100%; color: #5E6282; font-size: 14px; font-family: Poppins; font-weight: 500; line-height: 24px; word-wrap: break-word">
-        Built Wicket longer admire do barton vanity itself do in it. <br/>
-        Preferred to sportsmen it engrossed listening. Park gate <br/>
-        sell they west hard for the.
+    <div class="content">
+        <div style="color: #DF6951; font-size: 20px; font-family: Poppins; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Best Destinations around the world</div>
+        <div style="color: #181E4B; font-size: 84px; font-family: Volkhov; font-weight: 700; line-height: 89px; word-wrap: break-word">Travel, enjoy<br/>and live a new<br/>and full life</div>
+        <div style="width: 100%; color: #5E6282; font-size: 14px; font-family: Poppins; font-weight: 500; line-height: 24px; word-wrap: break-word">
+            Built Wicket longer admire do barton vanity itself do in it. <br/>
+            Preferred to sportsmen it engrossed listening. Park gate <br/>
+            sell they west hard for the.
+        </div>
     </div>
+    
+    <img src="dist/images/Decore.png" alt="decore" class="decore-image">
+    <img src="dist/images/femmeheureuse.png" alt="Description de l'image" class="femme-image">
+    
+</body>
 </html>
